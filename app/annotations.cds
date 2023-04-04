@@ -36,7 +36,10 @@ annotate service.Incidents with @(UI : {
             Value : category_code
         },
         //insert your line item enhancement here
-
+        { 
+            $Type : 'UI.DataField', 
+            Value : title 
+        }
     ],
 
     //the managed associations incidentStatus, category and priority provide a denormalized _code property to the root entity SafetIncidents
@@ -48,6 +51,7 @@ annotate service.Incidents with @(UI : {
     SelectionFields : [
         incidentStatus_code,
         priority_code,
+        category_code
         //insert your selection fields enhancement here
 
     ],
@@ -101,7 +105,10 @@ annotate service.Incidents with @(UI : {
                 Value : title
             },
             //insert your field group enhancement here 
-            
+            {
+                $Type : 'UI.DataField',
+                Value : description
+            },
        ]
     },
 
