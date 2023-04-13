@@ -124,7 +124,8 @@
                                         "route": "IncidentsObjectPage"
                                     }
                                 }
-                            }
+                            },
+                            "initialLoad": "Enabled"
                         }
                     },
                     "controlAggregation": "beginColumnPages",
